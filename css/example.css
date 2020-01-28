@@ -1,14 +1,19 @@
 body{
     background: #81bcd8;
     font-family: "Hiragino Kaku Gothic Pro";
+    box-sizing: border-box;
 }
 .site-header{
-    background: #fff;
+    background: rgba(255,255,255,0.5);
     display: flex;
     padding: 60px 20px;
     position: fixed;
     justify-content: space-between;
     width: 100%;
+}
+.site-header.transform{
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
 }
 .site-logo img{
     height: 20px;
@@ -16,7 +21,6 @@ body{
 }
 .gnav__menu{
     display: flex;
-    max-width: 100%;
 }
 .gnav__menu__item{
     margin-left: 20px;
