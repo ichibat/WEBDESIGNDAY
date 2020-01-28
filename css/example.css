@@ -3,17 +3,12 @@ body{
     font-family: "Hiragino Kaku Gothic Pro";
 }
 .site-header{
-    background: rgba(255,255,255,0.5);
+    background: #fff;
     display: flex;
     padding: 60px 20px;
     position: fixed;
     justify-content: space-between;
-    transition: .5s;
     width: 100%;
-}
-.site-header.transform{
-    background: rgba(255,255,255,0.9);
-    padding: 20px;
 }
 .site-logo img{
     height: 20px;
@@ -21,9 +16,12 @@ body{
 }
 .gnav__menu{
     display: flex;
+    max-width: 100%;
 }
 .gnav__menu__item{
     margin-left: 20px;
+    font-size: 20px;
+    list-style: none;
 }
 .gnav__menu__item a{
     color: #333;
@@ -55,6 +53,3 @@ body{
     font-size: 12px;
     text-align: center;
 }
-ul {
-    list-style: none;
-  }
