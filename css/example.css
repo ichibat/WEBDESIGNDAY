@@ -1,5 +1,6 @@
 body{
     background: #81bcd8;
+    font-family: "Hiragino Kaku Gothic Pro";
 }
 .site-header{
     background: rgba(255,255,255,0.5);
@@ -54,3 +55,6 @@ body{
     font-size: 12px;
     text-align: center;
 }
+ul {
+    list-style: none;
+  }
