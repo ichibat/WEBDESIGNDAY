@@ -4,13 +4,16 @@ body{
     box-sizing: border-box;
 }
 .site-header{
-    background: rgba(255,255,255,0.5);
+    background: #fff;
     display: flex;
-    padding: 60px 20px;
-    position: fixed;
+    padding: 20px;
+    position: absolute;
     justify-content: space-between;
-    transition: .5s;
     width: 100%;
+}
+.site-header.fixed{
+    position: fixed;
+    top: 0;
 }
 .site-header.transform{
     background: rgba(255,255,255,0.9);
@@ -22,6 +25,7 @@ body{
 }
 .gnav__menu{
     display: flex;
+    min-width: 900px;  
 }
 .gnav__menu__item{
     margin-left: 20px;
