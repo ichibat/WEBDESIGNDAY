@@ -1,0 +1,67 @@
+body{
+    background: #81bcd8;
+    font-family: "Hiragino Kaku Gothic Pro";
+    box-sizing: border-box;
+}
+.site-header{
+    background: #fff;  
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.site-header-title{
+    font-size: 14px;
+}
+.site-header.fixed{
+    position: fixed;
+    top: 0;
+}
+.site-logo img{
+    width: 125px;
+    height: auto;
+    margin-left: 40px;
+    float: left;
+}
+.inquiry-btn{
+  margin-left: auto;
+}
+.gnav__menu{
+    display: flex;
+    min-width: 800px;  
+}
+.gnav__menu__item{
+    margin-left: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+.gnav__menu__item a{
+    color: #333;
+    text-decoration: none;
+}
+.hero{
+    max-height: 500px;
+    overflow: hidden;
+}
+.hero img{
+    height: auto;
+    width: 100%;
+}
+.content{
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 800px;
+}
+.content p{
+    margin-bottom: 40px;
+}
+.site-footer{
+    background: #333;
+    padding: 80px 0;
+}
+.copyright{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
