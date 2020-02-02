@@ -3,6 +3,9 @@ body{
     font-family: "Hiragino Kaku Gothic Pro";
     box-sizing: border-box;
 }
+img{
+    margin: 0px;
+}
 figcaption{
 }
 .site-header{
@@ -22,13 +25,14 @@ figcaption{
     width: 125px;
     height: auto;
     margin-top: 18px;
-    margin-left: 10px;
+    margin-left: 10%;
     background-color:white;
+    display: block
 }
 .site-header-title{
     font-size: 14px;
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 .hero{
     position: relative;
@@ -56,14 +60,31 @@ site-inquiry{
 }
 
 .content{
-    background-color: orange;
+    background-color:rgb(235,185,77);
     padding-top: 20px;
     width: 100%;
     margin-top: 0px;
     text-align: center;
+    height: 600px;
 }
 .content-20{
     font-size: 20px;
+    line-height: 10px;
+    color:white;
+}
+.content-18{
+    font-size: 18px;
+    font: Menlo - 600;
+    color: #c7254e;
+    background-color: whitesmoke;
+    max-width: 470px;
+    margin: 20px auto;
+}
+.content-21{
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 20px;
+    color: white;
 }
 .site-footer{
     background: #333;
