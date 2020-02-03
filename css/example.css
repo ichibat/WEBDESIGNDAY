@@ -480,6 +480,14 @@ textarea,
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
+.c-content__center {
+  background-color: white;
+  padding-top: 20px;
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+  height: 588px; }
+
 body {
   background: #81bcd8;
   font-family: "Hiragino Kaku Gothic Pro";
