@@ -1,34 +1,3 @@
 .u-mtm {
   margin-top: 70px;
 }
-
-// 指定するmarginの範囲を定義
-$margin-min: 1;
-$margin-max: 100;
-
- @for $i from $margin-min through $margin-max {
-     @include ../layout/_responsive(".mt#{$i}") {
-         margin-top: #{$i}px;
-     }
-     @include ../layout/_responsive_down(".mt#{$i}em-down") {
-         margin-top: _em($i);
-     }
-     @include ../layout/_responsive(".mr#{$i}") {
-         margin-right: #{$i}px;
-     }
-     @include ../layout/_responsive_down(".mr#{$i}em-down") {
-         margin-right: _em($i);
-     }
-     @include ../layout/_responsive(".mb#{$i}") {
-         margin-bottom: #{$i}px;
-     }
-     @include ../layout/_responsive_down(".mb#{$i}em-down") {
-         margin-bottom: _em($i);
-     }
-     @include ../layout/_responsive(".ml#{$i}") {
-         margin-left: #{$i}px;
-     }
-     @include ../layout/_responsive_down(".ml#{$i}em-down") {
-         margin-left: _em($i);
-     }
- }
