@@ -1,606 +1,84 @@
-/* Document
- * ========================================================================== */
-/**
- * Add border box sizing in all browsers (opinionated).
- */
-*,
-::before,
-::after {
-  box-sizing: border-box; }
-
-/**
- * 1. Add text decoration inheritance in all browsers (opinionated).
- * 2. Add vertical alignment inheritance in all browsers (opinionated).
- */
-::before,
-::after {
-  text-decoration: inherit;
-  /* 1 */
-  vertical-align: inherit;
-  /* 2 */ }
-
-/**
- * 1. Use the default cursor in all browsers (opinionated).
- * 2. Change the line height in all browsers (opinionated).
- * 3. Use a 4-space tab width in all browsers (opinionated).
- * 4. Remove the grey highlight on links in iOS (opinionated).
- * 5. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- * 6. Breaks words to prevent overflow in all browsers (opinionated).
- */
-html {
-  cursor: default;
-  /* 1 */
-  line-height: 1.5;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  tab-size: 4;
-  /* 3 */
-  -webkit-tap-highlight-color: transparent;
-  -ms-text-size-adjust: 100%;
-  /* 5 */
-  -webkit-text-size-adjust: 100%;
-  /* 5 */
-  word-break: break-word;
-  /* 6 */ }
-
-/* Sections
- * ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
-body {
-  margin: 0; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Edge, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/* Grouping content
- * ========================================================================== */
-/**
- * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
- */
-dl dl,
-dl ol,
-dl ul,
-ol dl,
-ul dl {
-  margin: 0; }
-
-/**
- * Remove the margin on nested lists in Edge 18- and IE.
- */
-ol ol,
-ol ul,
-ul ol,
-ul ul {
-  margin: 0; }
-
-/**
- * 1. Add the correct sizing in Firefox.
- * 2. Show the overflow in Edge 18- and IE.
- */
-hr {
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
-
-/**
- * Add the correct display in IE.
- */
-main {
-  display: block; }
-
-/**
- * Remove the list style on navigation lists in all browsers (opinionated).
- */
-nav ol,
-nav ul {
-  list-style: none;
-  padding: 0; }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/* Text-level semantics
- * ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent; }
-
-/**
- * Add the correct text decoration in Edge 18-, IE, and Safari.
- */
-abbr[title] {
-  text-decoration: underline;
-  text-decoration: underline dotted; }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder; }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%; }
-
-/* Embedded content
- * ========================================================================== */
 /*
- * Change the alignment on media elements in all browsers (opinionated).
- */
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle; }
-
-/**
- * Add the correct display in IE 9-.
- */
-audio,
-video {
-  display: inline-block; }
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Remove the border on iframes in all browsers (opinionated).
- */
-iframe {
-  border-style: none; }
-
-/**
- * Remove the border on images within links in IE 10-.
- */
-img {
-  border-style: none; }
-
-/**
- * Change the fill color to match the text color in all browsers (opinionated).
- */
-svg:not([fill]) {
-  fill: currentColor; }
-
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Tabular data
- * ========================================================================== */
-/**
- * Collapse border spacing in all browsers (opinionated).
- */
-table {
-  border-collapse: collapse; }
-
-/* Forms
- * ========================================================================== */
-/**
- * Remove the margin on controls in Safari.
- */
-button,
-input,
-select {
-  margin: 0; }
-
-/**
- * 1. Show the overflow in IE.
- * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
- */
-button {
-  overflow: visible;
-  /* 1 */
-  text-transform: none;
-  /* 2 */ }
-
-/**
- * Correct the inability to style buttons in iOS and Safari.
- */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
-
-/**
- * 1. Change the inconsistent appearance in all browsers (opinionated).
- * 2. Correct the padding in Firefox.
- */
-fieldset {
-  border: 1px solid #a0a0a0;
-  /* 1 */
-  padding: 0.35em 0.75em 0.625em;
-  /* 2 */ }
-
-/**
- * Show the overflow in Edge 18- and IE.
- */
-input {
-  overflow: visible; }
-
-/**
- * 1. Correct the text wrapping in Edge 18- and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- */
-legend {
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
- * 1. Add the correct display in Edge 18- and IE.
- * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
- */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/**
- * Remove the inheritance of text transform in Firefox.
- */
-select {
-  text-transform: none; }
-
-/**
- * 1. Remove the margin in Firefox and Safari.
- * 2. Remove the default vertical scrollbar in IE.
- * 3. Change the resize direction in all browsers (opinionated).
- */
-textarea {
-  margin: 0;
-  /* 1 */
-  overflow: auto;
-  /* 2 */
-  resize: vertical;
-  /* 3 */ }
-
-/**
- * Remove the padding in IE 10-.
- */
-[type="checkbox"],
-[type="radio"] {
-  padding: 0; }
-
-/**
- * 1. Correct the odd appearance in Chrome, Edge, and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */ }
-
-/**
- * Correct the cursor style of increment and decrement buttons in Safari.
- */
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
- * Correct the text style of placeholders in Chrome, Edge, and Safari.
- */
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54; }
-
-/**
- * Remove the inner padding in Chrome, Edge, and Safari on macOS.
- */
-::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
- * 1. Correct the inability to style upload buttons in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
-/**
- * Remove the inner border and padding of focus outlines in Firefox.
- */
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
- * Restore the focus outline styles unset by the previous rule in Firefox.
- */
-:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
-/**
- * Remove the additional :invalid styles in Firefox.
- */
-:-moz-ui-invalid {
-  box-shadow: none; }
-
-/* Interactive
- * ========================================================================== */
-/*
- * Add the correct display in Edge 18- and IE.
- */
-details {
-  display: block; }
-
-/*
- * Add the correct styles in Edge 18-, IE, and Safari.
- */
-dialog {
-  background-color: white;
-  border: solid;
-  color: black;
-  display: block;
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
-  height: fit-content;
-  left: 0;
-  margin: auto;
-  padding: 1em;
-  position: absolute;
-  right: 0;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content; }
-
-dialog:not([open]) {
-  display: none; }
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item; }
-
-/* Scripting
- * ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-canvas {
-  display: inline-block; }
-
-/**
- * Add the correct display in IE.
- */
-template {
-  display: none; }
-
-/* User interaction
- * ========================================================================== */
-/*
- * 1. Remove the tapping delay in IE 10.
- * 2. Remove the tapping delay on clickable elements
-      in all browsers (opinionated).
- */
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea,
-[tabindex] {
-  -ms-touch-action: manipulation;
-  /* 1 */
-  touch-action: manipulation;
-  /* 2 */ }
-
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-  display: none; }
-
-/* Accessibility
- * ========================================================================== */
-/**
- * Change the cursor on busy elements in all browsers (opinionated).
- */
-[aria-busy="true"] {
-  cursor: progress; }
-
-/*
- * Change the cursor on control elements in all browsers (opinionated).
- */
-[aria-controls] {
-  cursor: pointer; }
-
-/*
- * Change the cursor on disabled, not-editable, or otherwise
- * inoperable elements in all browsers (opinionated).
- */
-[aria-disabled="true"],
-[disabled] {
-  cursor: not-allowed; }
-
-/*
- * Change the display on visually hidden accessible elements
- * in all browsers (opinionated).
- */
-[aria-hidden="false"][hidden] {
-  display: initial; }
-
-[aria-hidden="false"][hidden]:not(:focus) {
-  clip: rect(0, 0, 0, 0);
-  position: absolute; }
-
-.c-content__center {
-  background-color: white;
-  padding-top: 20px;
-  width: 100%;
-  margin-top: 0px;
-  text-align: center;
-  height: 588px; }
-
-body {
-  background: #81bcd8;
-  font-family: "Hiragino Kaku Gothic Pro";
-  box-sizing: border-box; }
-
-img {
-  margin: 0px; }
-
-.site-header {
-  background: white;
-  height: 75px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  position: inline-block;
-  z-index: 10; }
-
-.site-header.fixed {
-  position: fixed;
-  top: 0; }
-
-.site-header-logo img {
-  width: 125px;
-  height: auto;
-  margin-top: 18px;
-  margin-left: 10%;
-  background-color: white;
-  display: block; }
-
-.site-header-title {
-  font-size: 14px;
-  margin-top: 30px;
-  margin-left: 30px; }
-
-.hero {
-  position: relative; }
-
-.hero-image {
-  object-fit: cover;
-  width: 100%;
-  height: 500px; }
-
-.hero-text {
-  display: block;
-  position: absolute;
-  top: 170px;
-  right: 300px;
-  text-align: center; }
-
-.hero-text-regular {
-  font-size: 28px; }
-
-.hero-text-small {
-  font-size: 20px; }
-
-site-inquiry {
-  margin: 0 0 0 auto; }
-
-.content {
-  background-color: #ebb94d;
-  padding-top: 20px;
-  width: 100%;
-  margin-top: 0px;
-  text-align: center;
-  height: 600px; }
-
-.content-20 {
-  font-size: 20px;
-  line-height: 10px;
-  color: white; }
-
-.content-18 {
-  font-size: 18px;
-  font: Menlo-600;
-  color: #c7254e;
-  background-color: whitesmoke;
-  max-width: 470px;
-  margin: 20px auto; }
-
-.content-21 {
-  margin-top: 30px;
-  font-size: 21px;
-  line-height: 20px;
-  color: white; }
-
-.site-footer {
-  background: #333;
-  padding: 80px 0; }
-
-.copyright {
-  color: #fff;
-  font-size: 12px;
-  text-align: center; }
-
-.u-mtm {
-  margin-top: 70px; }
-
-.u-align-baseline {
-  vertical-align: baseline !important; }
-
-.u-align-top {
-  vertical-align: top !important; }
-
-.u-align-middle {
-  vertical-align: middle !important; }
-
-.u-align-bottom {
-  vertical-align: bottom !important; }
-
-.u-align-text-bottom {
-  vertical-align: text-bottom !important; }
-
-.u-align-text-top {
-  vertical-align: text-top !important; }
-
-/*# sourceMappingURL=example.css.map */
+Error: Invalid CSS after "     @include ": expected identifier, was "../layout/_resp..."
+        on line 10 of object/utility/_margin.scss
+        from line 24 of style.scss
+
+5: // 指定するmarginの範囲を定義
+6: $margin-min: 1;
+7: $margin-max: 100;
+8: 
+9:  @for $i from $margin-min through $margin-max {
+10:      @include ../layout/_responsive(".mt#{$i}") {
+11:          margin-top: #{$i}px;
+12:      }
+13:      @include ../layout/_responsive_down(".mt#{$i}em-down") {
+14:          margin-top: _em($i);
+15:      }
+
+Backtrace:
+object/utility/_margin.scss:10
+style.scss:24
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1097:in `ident!'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:250:in `include_directive'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:301:in `for_directive'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/tims/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"     @include \": expected identifier, was \"../layout/_resp...\"\A         on line 10 of object/utility/_margin.scss\A         from line 24 of style.scss\A \A 5: // 指定するmarginの範囲を定義\A 6: $margin-min: 1;\A 7: $margin-max: 100;\A 8: \A 9:  @for $i from $margin-min through $margin-max {\A 10:      @include ../layout/_responsive(\".mt#{$i}\") {\A 11:          margin-top: #{$i}px;\A 12:      }\A 13:      @include ../layout/_responsive_down(\".mt#{$i}em-down\") {\A 14:          margin-top: _em($i);\A 15:      }"; }
