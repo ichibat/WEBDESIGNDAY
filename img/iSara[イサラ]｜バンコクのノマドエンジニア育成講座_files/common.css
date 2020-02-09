@@ -1,0 +1,155 @@
+@charset "utf-8";
+/** simple base */
+
+/** common */
+img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+#OF_form1 {
+	width:550px;
+	text-align:left;
+}
+#OF_form1 table#formtable {
+	border-collapse:collapse;
+}
+#OF_form1 table#formtable tr#caption th {
+	width:544px;
+	padding:5px;
+}
+#OF_form1 table#formtable tr th,
+#OF_form1 table#formtable tr td {
+	padding:3px;
+	font-size:12px;
+}
+#OF_form1 table#formtable tr th {
+	width:150px;
+	vertical-align:center;
+	text-align:center;
+	font-weight:bold;
+	font-size:12px;
+}
+#OF_form1 table#formtable tr td {
+	width:388px;
+}
+#OF_form1 table#formtable tr td label{
+	display:block;
+	float:left;
+	/*white-space:nowrap;*/
+}
+#OF_form1 input.OF_submit_btn1 {
+	display:block;
+	margin:10px auto;
+	font-size:16px;
+	padding:5px;
+}
+#OF_form1 input.action_send {
+	margin:10px auto;
+	font-size:16px;
+	padding:5px;
+}
+#OF_form1 input.action_back {
+	margin:10px auto;
+	font-size:16px;
+	padding:5px;
+}
+#OF_form1 input.text {
+	width:200px;
+}
+#OF_form1 textarea {
+	width:335px; height:100px;
+}
+#formtable input[type="text"] {
+	display: inline-block;
+}
+
+/** unique */
+#OF_form1 #sec_seimei input {
+	width:60px;
+}
+#OF_header {
+	width:550px;
+	text-align:left;
+}
+#OF_footer {
+	width:550px;
+	text-align:left;
+}
+#OF_header h1#default {
+	font-size:24px;
+}
+#OF_header img {
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	/* width: 100%; */
+}
+
+/** required free */
+#OF_form1 .required {
+	color: #FFF;
+	background-color: #F20000;
+	padding: 1px 3px 0px 3px;
+	margin-left: 5px;
+	float: right;
+}
+#OF_form1 .free {
+	color: #FFF;
+	background-color: #0000E8;
+	padding: 1px 3px 0px 3px;
+	margin-left: 5px;
+	float: right;
+}
+
+#OF_form1 .form_errors,
+#OF_form1 .form_error {
+	margin:1em 0;
+	font-size:12px;
+	color:#f00;
+	font-weight:bold;
+}
+
+
+/* Responsive */
+@media only screen and (max-width:480px){
+	#OF_header,
+	#OF_footer {
+	width: 100%;
+	}
+	#OF_form1 {
+	width: 100%;
+	}
+	#OF_form1 table#formtable tr#caption th {
+	width: 100%;
+	padding: 5px 0;
+	}
+	tr#caption {
+	width: 100%;
+	}
+	#OF_form1 table#formtable tr th,
+	#OF_form1 table#formtable tr td {
+	width: 100%;
+	padding: 5px 0;
+	}
+	#OF_form1 .required,
+	#OF_form1 table#formtable tr td label {
+	float: none;
+	}
+	#OF_form1 select {
+	margin-left: 5px;
+	}
+	    #formtable { width: 100%; margin: 5px 0; }
+	#formtable th,
+	#formtable td{
+	width: 100%;
+	display: block;
+	border-top: none;
+	}
+	#formtable input[type="text"],
+	#formtable textarea {
+	width: 95%;
+	margin:5px;
+	}
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Document
  * ========================================================================== */
 /**
@@ -480,11 +481,13 @@ textarea,
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
-.btn-square-pop {
+.c-btn--request__top {
   width: 262px;
-  font: Hiragino Kaku Gothic Pro;
+  font: "Hiragino Kaku Gothic Pro";
   font-size: 12px;
-  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
   display: block;
   text-align: center;
   padding: 8px 0 10px;
@@ -492,9 +495,40 @@ textarea,
   background-color: #DA6B64;
   border-radius: 25px; }
 
-.btn-square-pop:active {
+.c-btn--request__top:active {
   border-bottom: solid 2px #fd9535;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
+
+.c-basic-card {
+  margin: 10px;
+  width: 377px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white; }
+
+.c-basic-card--img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto; }
+
+.c-basic-card--content {
+  padding: 20px; }
+
+.c-basic-card--title {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #333;
+  background-color: #EBB94D;
+  border-radius: 7px; }
+
+.c-basic-card--text {
+  color: #777;
+  font-size: 12px;
+  line-height: 19px; }
 
 .c-content__center {
   background-color: white;
@@ -503,6 +537,22 @@ textarea,
   margin-top: 0px;
   text-align: center;
   height: 588px; }
+
+.p-section__photo {
+  height: 420px;
+  width: 100%;
+  background-image: url("/Users/tims/Dropbox/Apps/Byword/coding/isara/img/iSara[イサラ]｜バンコクのノマドエンジニア育成講座_files/aboutsecondbg.jpg");
+  background-size: cover; }
+
+.p-card--three {
+  display: flex;
+  justify-content: center; }
+
+.p-section1__text--whitelg {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 28px; }
 
 body {
   background: #81bcd8;
