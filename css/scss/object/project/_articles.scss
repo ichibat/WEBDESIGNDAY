@@ -8,9 +8,12 @@
   display: flex;
   justify-content: center;
 }
-.p-section1__text--whitelg {
+.p-section1 {
   width: 100%;
   text-align: center;
-    color: white;
-    font-size: 28px;
+&__text--whitelg{
+  color: white;
+  font-size: 28px;
+  padding-top: 63px;
+}  
 }
