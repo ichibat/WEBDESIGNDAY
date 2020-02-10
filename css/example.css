@@ -568,6 +568,11 @@ textarea,
     text-align: center;
     width: 800px; }
 
+.c-content-center3 {
+  height: 511px;
+  width: 100px;
+  background-color: white; }
+
 .p-section__photo {
   height: 420px;
   width: 100%;
