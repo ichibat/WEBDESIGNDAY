@@ -29,5 +29,17 @@
   height: 511px;
   width: 100px;
   background-color: white;
-  
+  text-align: center;
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 auto;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 auto;
+  }
 }
