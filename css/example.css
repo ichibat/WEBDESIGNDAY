@@ -503,7 +503,7 @@ textarea,
   margin: 10px;
   width: 377px;
   border-style: solid;
-  border-color: black;
+  border-color: white;
   border-radius: 5px;
   text-align: center;
   background-color: white; }
@@ -541,6 +541,8 @@ textarea,
     font-size: 12px;
     font-weight: 300;
     line-height: 19px;
+    text-align: center; }
+  .c-card-five--img {
     text-align: center; }
 
 .c-content-center1 {
@@ -595,31 +597,22 @@ textarea,
   position: relative; }
   .p-section2-caption-shrt__text {
     color: white;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
     position: absolute;
     top: 50%;
-    /*親要素を起点に上から50%*/
     left: 50%;
-    /*親要素を起点に左から50%*/
-    transform: translateY(-50%) translateX(-50%);
-    /*要素の大きさの半分ずつを戻す*/
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    font-size: 20px; }
-  .p-section2-caption-shrt__text2 {
-    color: white;
-    position: absolute;
-    top: 50%;
-    /*親要素を起点に上から50%*/
-    left: 50%;
-    /*親要素を起点に左から50%*/
-    transform: translateY(-50%) translateX(-50%);
-    /*要素の大きさの半分ずつを戻す*/
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    font-size: 20px; }
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%; }
 
 .p-section_small {
   position: relative;
+  text-align: center;
   margin: 0 auto;
-  text-align: center; }
+  width: 100%; }
 
 .p-section__small--oval {
   position: absolute;
@@ -631,7 +624,6 @@ textarea,
   font-size: 14px;
   color: white;
   line-height: 80px;
-  text-align: center;
   z-index: 10; }
 
 .p-content-center2 {
