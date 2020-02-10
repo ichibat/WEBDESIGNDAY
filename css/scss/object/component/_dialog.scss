@@ -34,15 +34,17 @@
     font-size: 28px;
     font-weight: 600;
     line-height: 40px;
+    padding-top: 64px;
   }
   &__subtitle {
     font-size: 20px;
-    font-weight: 600;
-    line-height: 40px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-top: 42px;
   }
   &__footer {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 26px;
   }
 }
