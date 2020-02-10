@@ -29,3 +29,16 @@
   font-size: 12px;
   line-height: 19px;
 }
+.c-card-five {
+  display:flex;
+  justify-content: center;
+  &--card{
+    width:133px;
+    list-style: none;
+  }
+  &--title {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+}
