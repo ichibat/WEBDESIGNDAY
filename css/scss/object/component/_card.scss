@@ -33,6 +33,7 @@
   display:flex;
   justify-content: center;
   &--card{
+    margin-top: 24px;
     width:133px;
     list-style: none;
   }
@@ -40,5 +41,6 @@
     font-size: 12px;
     font-weight: 300;
     line-height: 19px;
+    text-align: center;
   }
 }

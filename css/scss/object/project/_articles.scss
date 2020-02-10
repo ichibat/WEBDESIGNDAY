@@ -3,6 +3,7 @@
   width:100%;
   background-image: url("/Users/tims/Dropbox/Apps/Byword/coding/isara/img/iSara[イサラ]｜バンコクのノマドエンジニア育成講座_files/aboutsecondbg.jpg");
   background-size: cover;
+  text-align: center;
 }
 .p-card--three {
   display: flex;
@@ -29,6 +30,15 @@
   height: 141px;
   position: relative;
   &__text{
+    color:white;
+    position: absolute;
+  top: 50%; /*親要素を起点に上から50%*/
+  left: 50%;  /*親要素を起点に左から50%*/
+  transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  font-size: 20px;
+  }
+  &__text2{
     color:white;
     position: absolute;
   top: 50%; /*親要素を起点に上から50%*/
@@ -110,10 +120,10 @@
     text-align: center;
     font-weight: 600;
   }
-  &__follow--top {
+  &__list {
     margin: 0px auto;
     padding: 27px 0px 0px;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     font-weight: 600;
   }
