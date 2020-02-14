@@ -795,11 +795,20 @@ textarea,
     line-height: 40px;
     padding-top: 5px; }
   .p-content-center4__card {
-    height: 380px;
-    width: 360px; }
+    display: flex;
+    justify-content: center; }
+    .p-content-center4__card--each {
+      height: 380px;
+      width: 360px;
+      list-style: none; }
     .p-content-center4__card--figure {
       height: 180px;
       width: 100%; }
+    .p-content-center4__card--title {
+      font-size: 20px;
+      color: #ebb94d;
+      font-weight: 700;
+      line-height: 32px; }
 
 body {
   background: #81bcd8;

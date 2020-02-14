@@ -160,6 +160,7 @@ z-index: 10;
   width: 100%;
   background-color: #FEF5E0;
   text-align: center;
+ 
   &__subtitle {
     font-size: 20px;
     font-weight: 300;
@@ -173,11 +174,22 @@ z-index: 10;
     padding-top: 5px;
   }
   &__card {
-    height: 380px;
-    width: 360px;
+    display:flex;
+    justify-content: center;
+    &--each{
+      height: 380px;
+      width: 360px;
+      list-style: none;
+    }
     &--figure {
       height: 180px;
       width: 100%;
+    }
+    &--title {
+      font-size: 20px;
+      color: #ebb94d;
+      font-weight: 700;
+      line-height: 32px;
     }
   }
 }
