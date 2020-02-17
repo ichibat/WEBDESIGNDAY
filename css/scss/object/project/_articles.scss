@@ -160,6 +160,7 @@ z-index: 10;
   width: 100%;
   background-color: #FEF5E0;
   text-align: center;
+  position: relative;
  
   &__subtitle {
     font-size: 20px;
@@ -192,4 +193,31 @@ z-index: 10;
       line-height: 32px;
     }
   }
+}
+
+.p-article1 {
+  position: absolute;
+  top:15px;
+  margin: 15px auto;
+  margin: 2px solid #EBB94D;
+  background-color: white;
+  __title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+    color:#ebb94d;
+    text-align: center;
+  }
+  __subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+  }
+  __sentence　{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+  };
 }
