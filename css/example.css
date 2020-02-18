@@ -780,7 +780,7 @@ textarea,
   line-height: 19px; }
 
 .p-content-center4 {
-  height: 800px;
+  height: 1000px;
   width: 100%;
   background-color: #FEF5E0;
   text-align: center;
@@ -813,23 +813,25 @@ textarea,
 
 .p-article1 {
   position: absolute;
+  width: 1170px;
+  height: auto;
   top: 550px;
-  margin: 15px auto;
+  margin: 20px auto;
   border: 2px solid #EBB94D;
   background-color: white;
   z-index: 10; }
-  .p-article1 __title {
+  .p-article1__title {
     font-size: 28px;
     font-weight: 600;
     line-height: 45px;
     color: #ebb94d;
     text-align: center; }
-  .p-article1 __subtitle {
+  .p-article1__subtitle {
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
     text-align: center; }
-  .p-article1 __sentence　 {
+  .p-article1__sentence　 {
     font-size: 16px;
     font-weight: 600;
     line-height: 26px;

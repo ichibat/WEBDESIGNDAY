@@ -156,12 +156,11 @@ z-index: 10;
 
 
 .p-content-center4 {
-  height: 800px;
+  height:1000px;
   width: 100%;
   background-color: #FEF5E0;
   text-align: center;
   position: relative;
- 
   &__subtitle {
     font-size: 20px;
     font-weight: 300;
@@ -197,25 +196,27 @@ z-index: 10;
 
 .p-article1 {
   position: absolute;
+  width: 1170px;
+  height: auto;
   top:550px;
-  margin: 15px auto;
+  margin: 20px auto;
   border: 2px solid #EBB94D;
   background-color: white;
   z-index: 10;
-  __title {
+  &__title {
     font-size: 28px;
     font-weight: 600;
     line-height: 45px;
     color:#ebb94d;
     text-align: center;
   }
-  __subtitle {
+  &__subtitle {
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
     text-align: center;
   }
-  __sentence　{
+  &__sentence　{
     font-size: 16px;
     font-weight: 600;
     line-height: 26px;
