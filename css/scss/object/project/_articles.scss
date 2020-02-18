@@ -197,10 +197,11 @@ z-index: 10;
 
 .p-article1 {
   position: absolute;
-  top:15px;
+  top:550px;
   margin: 15px auto;
-  margin: 2px solid #EBB94D;
+  border: 2px solid #EBB94D;
   background-color: white;
+  z-index: 10;
   __title {
     font-size: 28px;
     font-weight: 600;
