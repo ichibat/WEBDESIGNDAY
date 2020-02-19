@@ -837,6 +837,20 @@ textarea,
     line-height: 26px;
     text-align: center; }
 
+.p-article2 {
+  width: 1170px;
+  height: auto;
+  margin: 20px auto;
+  border: 2px solid #EBB94D;
+  background-color: white;
+  text-align: center; }
+  .p-article2__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #ebb94d;
+    text-align: center; }
+
 body {
   background: #81bcd8;
   font-family: "Hiragino Kaku Gothic Pro";
