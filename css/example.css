@@ -850,6 +850,11 @@ textarea,
     line-height: 45px;
     color: #ebb94d;
     text-align: center; }
+  .p-article2__subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center; }
 
 body {
   background: #81bcd8;
